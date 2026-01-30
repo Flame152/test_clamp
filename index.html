@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Clamp CSS Calculator</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20260131015424">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__title-h1">
+
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<section class="main">
+				<div class="main__container">
+					<div class="main__title title-h1">
+						<h1>Clamp CSS calculator</h1>
+					</div>
+					<div class="main__calculator calculator">
+						<div class="basic-unit">
+							<label for="base-size">Base size setting</label>
+							<div><span>1rem =</span><input type="text" id="base-size" value="16">px</div>
+						</div>
+						<div class="unit-row">
+							<div class="unit-row__left">
+								<div class="unit-row__title">
+									<span>VALUES</span>
+								</div>
+								<div class="unit-row__row-unit">
+									<div class="unit">
+										<label for="min-size">Min</label>
+										<div class="unit__input">
+											<input type="text" id="min-size" value="18" autocomplete="off">
+											<div class="unit__px">px</div>
+										</div>
+									</div>
+									<div class="unit">
+										<label for="max-size">Max</label>
+										<div class="unit__input">
+											<input type="text" id="max-size" value="20" autocomplete="off">
+											<div class="unit__px">px</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="unit-row__decor"></div>
+							<div class="unit-row__right">
+								<div class="unit-row__title">
+									<span>Viewport</span>
+								</div>
+								<div class="unit-row__row-unit">
+									<div class="unit">
+										<label for="min-width">Min</label>
+										<div class="unit__input">
+											<input type="text" id="min-width" value="375" autocomplete="off">
+											<div class="unit__px">px</div>
+										</div>
+									</div>
+									<div class="unit">
+										<label for="max-width">Max</label>
+										<div class="unit__input">
+											<input type="text" id="max-width" value="1200" autocomplete="off">
+											<div class="unit__px">px</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="result">
+							<span class="result__title">The result:</span>
+							<pre class="result__text" id="copy-target"></pre>
+							<div class="result__btn-wrapper">
+								<button class="result__btn btn" id="result-btn" title="copy">copy</button>
+							</div>
+							<span id="copy-status" class="copy-status"></span>
+						</div>
+					</div>
+
+					<div class="description">
+						<div class="description__title title-h2">
+							<h2>Расширенный Калькулятор Clamp CSS</h2>
+						</div>
+						<div class="paragraph">
+							<p>Наш CSS-калькулятор с ограничением значений создан для того, чтобы упростить процесс адаптивного
+								дизайна. Он помогает генерировать точные значения clamp() CSS, благодаря чему ваши сайты будут
+								выглядеть отлично на экранах любого размера.</p>
+						</div>
+						<ul class="list">
+							<li>Адаптивный дизайн: Легко создавайте адаптивную типографику и макеты.</li>
+							<li>Работа с отрицательными значениями: Уникальная функция, которая позволяет вычислять и
+								использовать отрицательные значения для решения сложных дизайнерских задач.</li>
+							<li>Удобный интерфейс: Простой, быстрый и интуитивно понятный для разработчиков любого уровня.</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__copyright">© Проект Vladimir-code <span id="year"></span> Все права защищены.</div>
+			</div>
+		</footer>
+	</div>
+	<script src="js/app.min.js?_v=20260131015424"></script>
+</body>
+
+</html>
